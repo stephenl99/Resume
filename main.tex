@@ -1,0 +1,220 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Stephen Linder} \\ \textbf{Software Engineer} \\ \vspace{1pt}
+    \small 770-878-0152 $|$ \href{mailto:x@x.com}{\underline{sjtlinder@icloud.com}} $|$ 
+    \href{https://www.linkedin.com/in/stephen-linder-b93563261/}{\underline{linkedin.com/in/stephen-linder-b93563261/}} $|$
+    \href{https://github.com/stephenl99}{\underline{github.com/stephenl99}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Computer Science and Mathematics Double-Major, Russian Minor}{Aug. 2023 -- May 2026}
+      
+    \resumeItemListStart
+        \resumeItem{GPA: 4.0}
+        \resumeItem{Current Classification: Junior}
+        \resumeItem{Relevant Coursework: Linear Algebra, Second Course in Linear Algebra (Proof-Based), Data Structures and Algorithms, Objects and Design, Discrete Mathematics, Differential Equations, Multivariable Calculus, Physics}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Atlanta, GA}
+      {CardioWise}{Aug. 2024 -- Dec. 2024}
+      \resumeItemListStart
+        \resumeItem{Optimizing algorithm for modeling of ventricular topology}
+        \resumeItem{Refactoring CardioWise codebase from MATLAB to C}
+        \resumeItem{Analyzing point cloud data to assess cardiac health}
+        % \resumeItem{Implementing efficient GPU multithreading to enable improved data analysis}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Medical Robotics Research Intern}{Atlanta, GA}
+      {Winship Cancer Institute of Emory University}{May 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Implementing robotic arm interface in Dr. Amir Pourmorteza's Lab}
+        \resumeItem{Creating novel Python library using Test-Driven Development to segment robotic arm movement for machine learning imaging}
+        \resumeItem{Developed MATLAB code to determine absolute position of robotic arm when connected to CT scanner}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Atlanta Food Finder} $|$ \emph{Python, Django, JavaScript, HTML, CSS, SQLite, Ajax, Agile, DOM}}{\emph{May 2024 -- Present}}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using Django
+            and Google Maps API}
+            \resumeItem{Visualized Atlanta restaurants on Google Maps by accessing geolocation data from SQLite database}
+            \resumeItem{Implemented Google Maps search capabilities to allow user interaction with restaurant data from Yelp Fusion API}
+            \resumeItem{Gained expertise on all phases of the software development life cycle}
+            \resumeItem{Became adept in Agile development, utilizing scrums and CI/CD}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Kalman Filtering} $|$ \emph{C, Python, MATLAB, Avionics, CAN}}{\emph{Aug. 2023 -- Present}}
+          \resumeItemListStart
+            \resumeItem{Created Kalman Filter in C with Georgia Tech Experimental Rocketry}
+            \resumeItem{Used mathematical filtering techniques to estimate state of rocket in order to track and adjust its trajectory}
+            \resumeItem{Utilized both MATLAB and C to implement filtering capabilities}
+            \resumeItem{Implemented CAN Protocol to allow for communication between micro-controllers}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+\section{Activities}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{International Tutor} $|$ \emph{Russian Language}}{\emph{June 2022 -- Present}}
+          \resumeItemListStart
+            \resumeItem{Providing free math tutoring for Ukrainian refugee students as a part of Tutoring Without Borders}
+            \resumeItem{Utilizing both Russian and English to convey math concepts in algebra and geometry}
+            \resumeItem{Translating math lessons into Russian and creating database of relevant words and phrases}
+            \resumeItem{Recently featured on Georgia Tech social media platforms, including \href{https://www.linkedin.com/feed/update/urn:li:activity:7151242009431740416/}{\underline{LinkedIn}} and \href{https://www.instagram.com/p/C19vISVuBfw/?img_index=1/}{\underline{Instagram}}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, JavaScript, CUDA, HTML, CSS, SQLite, SQL, MATLAB} \\
+     \textbf{Frameworks}{: Django, Node.js, Angular, ReactJS, JUnit} \\
+     \textbf{Developer Tools}{: MongoDB, MySQL, Linux, Git, GitHub, IntelliJ, VS Code, PyCharm, Eclipse, Jupyter, React} \\
+     \textbf{Libraries}{: pandas, NumPy, jQuery, Qiskit}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
