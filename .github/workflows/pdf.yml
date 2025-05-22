@@ -37,5 +37,9 @@ jobs:
         with:
           name: compiled-resume
           path: main.pdf
-        
+          
+      - name: Move PDF to temp folder
+        run: |
+          mkdir publish
+          mv main.pdf publish/
         
