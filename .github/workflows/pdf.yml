@@ -38,8 +38,11 @@ jobs:
           name: compiled-resume
           path: main.pdf
           
-      - name: Move PDF to temp folder
+      - name: Commit compiled PDF to repo
         run: |
-          mkdir publish
-          mv main.pdf publish/
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add main.pdf
+          git commit -m "Auto-compiled main.pdf from LaTeX" || echo "No changes to commit"
+          git push
         
