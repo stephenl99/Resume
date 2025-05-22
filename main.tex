@@ -121,8 +121,8 @@
       
     \resumeItemListStart
         \resumeItem{GPA: 4.0}
-        \resumeItem{Relevant Coursework: Linear Algebra, Second Course in Linear Algebra (Proof-Based), Data Structures and Algorithms, Objects and Design, Discrete Mathematics, Differential Equations, Multivariable Calculus, Physics}
-        \resumeItem{B2 proficiency in Russian Language}
+        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Deign and Analysis of Algorithms, Computer Systems and Networks, Computer Organization and Programming, Objects and Design, Second Course in Linear Algebra, Introduction to AI}
+        \resumeItem{Concentrations: Intelligence and Information Internetworks}
       \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -139,13 +139,13 @@
         \resumeItem{Incoming Software Engineer Intern at Fanduel}
         % \resumeItem{Implementing efficient GPU multithreading to enable improved data analysis}
       \resumeItemListEnd
-    \resumeSubheading
-      {Software Engineer Intern}{Atlanta, GA}
-      {CardioWise}{Aug. 2024 -- December 2024}
-      \resumeItemListStart
-        \resumeItem{Optimizing algorithm for visualization of ventricular topology using point cloud data}
-        \resumeItem{Utilizing MATLAB to model and compare heart health datasets to determine heart health risks}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Software Engineer Intern}{Atlanta, GA}
+    %   {CardioWise}{Aug. 2024 -- December 2024}
+    %   \resumeItemListStart
+    %     \resumeItem{Optimizing algorithm for visualization of ventricular topology using point cloud data}
+    %     \resumeItem{Utilizing MATLAB to model and compare heart health datasets to determine heart health risks}
+    %   \resumeItemListEnd
 
     \resumeSubheading
       {Medical Robotics Research Intern}{Atlanta, GA}
@@ -172,17 +172,46 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Event-Driven Backtester} $|$ \emph{C++, Quantitative Finance}}{\href{https://github.com/stephenl99/Backtester}{\underline{Github link}}}{\emph{}}
+          \resumeItemListStart
+            \resumeItem{Implemented a low-latency backtesting environment in C++}
+            \resumeItem{Tested various trading strategies on historic datasets by generating events and simulating slippage}
+            \resumeItem{Currently expanding environment to allow for live data flows and machine learning trading strategies}
+          \resumeItemListEnd
+
+
+
+
+
+
+    
       \resumeProjectHeading
-          {\textbf{Atlanta Food Finder} $|$ \emph{Python, Django, JavaScript, HTML, CSS, SQLite, Ajax, Agile, DOM}}{\emph{}}
+          {\textbf{Atlanta Food Finder} $|$ \emph{Python, Django, JavaScript, HTML, CSS, SQLite, Ajax, Agile, DOM}}{\href{https://github.com/stephenl99/AtlantaFoodFinder}{\underline{Github link}}}{\emph{}}
           \resumeItemListStart
             \resumeItem{Developed a full-stack web application using Django
             and Google Maps API}
             \resumeItem{Visualized Atlanta restaurants on Google Maps by accessing geolocation data from SQLite database}
             \resumeItem{Implemented Google Maps search capabilities to allow user interaction with restaurant data from Yelp Fusion API}
-            \resumeItem{Gained expertise on all phases of the software development life cycle}
             \resumeItem{Became adept in Agile development, utilizing scrums and CI/CD}
           \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Multithreaded Process Scheduler} $|$ \emph{C, pthreads}}{\emph{}}
+          \resumeItemListStart
+            \resumeItem{Utilized multithreading to build Linux process scheduler}
+            \resumeItem{Managed CPU resources by scheduling processes on CPU cores and removing them for I/O bursts}
+            \resumeItem{Optimized CPU usage by using various scheduling algorithms, including round-robin, preemptive priority scheduling, and shortest remaining time first}
+          \resumeItemListEnd
+            
       \resumeProjectHeading
+      {\textbf{Virtual Memory System} $|$ \emph{C, Memory Management}}{\emph{}}
+          \resumeItemListStart
+            \resumeItem{Developed a virtual memory manager which mapped virtual memory pages to physical frames}
+            \resumeItem{Designed page replacement algorithm to efficiently select victim frame upon page faults}
+            \resumeItem{Created a daemon process to track page references and evict least recently used pages}
+            
           % {\textbf{Kalman Filtering} $|$ \emph{C, Python, MATLAB, Avionics, CAN}}{\emph{Aug. 2023 -- Present}}
           % \resumeItemListStart
           %   \resumeItem{Created Kalman Filter in C with Georgia Tech Experimental Rocketry}
@@ -190,27 +219,27 @@
           %   \resumeItem{Utilized both MATLAB and C to implement filtering capabilities}
           %   \resumeItem{Implemented CAN Protocol to allow for communication between micro-controllers}
           % \resumeItemListEnd
-          {\textbf{Quantum Computing} $|$ \emph{Python, Qiskit, SciPy, NumPy}}{\emph{}}
-          \resumeItemListStart
-            \resumeItem{Developed quantum circuit to accurately prepare quantum states}
-            \resumeItem{Utilized quantum gates and the swap test to recreate given quantum states}
-            \resumeItem{Used ansatz optimization techniques to improve efficiency of state preparation}
-            \resumeItem{Attained 99.5\% fidelity on 2-qubit systems and 93.4\% fidelity on 3-qubit systems}
+          % {\textbf{Quantum Computing} $|$ \emph{Python, Qiskit, SciPy, NumPy}}{\emph{}}
+          % \resumeItemListStart
+          %   \resumeItem{Developed quantum circuit to accurately prepare quantum states}
+          %   \resumeItem{Utilized quantum gates and the swap test to recreate given quantum states}
+          %   \resumeItem{Used ansatz optimization techniques to improve efficiency of state preparation}
+          %   \resumeItem{Attained 99.5\% fidelity on 2-qubit systems and 93.4\% fidelity on 3-qubit systems}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
-\section{Activities}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{International Tutor} $|$ \emph{Russian Language}}{\emph{June 2022 -- Present}}
-          \resumeItemListStart
-            \resumeItem{Providing free math tutoring for Ukrainian refugee students as a part of Tutoring Without Borders}
-            \resumeItem{Utilizing both Russian and English to convey math concepts in algebra and geometry}
-            \resumeItem{Translating math lessons into Russian and creating database of relevant words and phrases}
-            \resumeItem{Recently featured on Georgia Tech social media platforms, including \href{https://www.linkedin.com/feed/update/urn:li:activity:7151242009431740416/}{\underline{LinkedIn}} and \href{https://www.instagram.com/p/C19vISVuBfw/?img_index=1/}{\underline{Instagram}}}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+% \section{Activities}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{International Tutor} $|$ \emph{Russian Language}}{\emph{June 2022 -- Present}}
+%           \resumeItemListStart
+%             \resumeItem{Providing free math tutoring for Ukrainian refugee students as a part of Tutoring Without Borders}
+%             \resumeItem{Utilizing both Russian and English to convey math concepts in algebra and geometry}
+%             \resumeItem{Translating math lessons into Russian and creating database of relevant words and phrases}
+%             \resumeItem{Recently featured on Georgia Tech social media platforms, including \href{https://www.linkedin.com/feed/update/urn:li:activity:7151242009431740416/}{\underline{LinkedIn}} and \href{https://www.instagram.com/p/C19vISVuBfw/?img_index=1/}{\underline{Instagram}}}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
 
 
 %
@@ -218,10 +247,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C, JavaScript, HTML, CSS, SQLite, SQL, MATLAB} \\
+     \textbf{Languages}{: C++, C, Java, Python, JavaScript, HTML, CSS, SQLite, SQL, MATLAB} \\
      \textbf{Frameworks}{: Django, Node.js, Angular, ReactJS, JUnit} \\
-     \textbf{Developer Tools}{: Docker, MySQL, Linux, Git, GitHub, IntelliJ, VS Code, PyCharm, Eclipse, Jupyter, React} \\
-     \textbf{Libraries}{: SciPy, NumPy, pandas, jQuery, Qiskit}
+     \textbf{Developer Tools}{: Docker, Linux, Git, GitHub, GCC/GDB, IntelliJ, VS Code, PyCharm, Eclipse, Jupyter, React} \\
+     \textbf{Libraries}{: pthreads, SciPy, NumPy, pandas, PyTorch, Pybind11, Qiskit, Beautiful Soup}
     }}
  \end{itemize}
 
