@@ -1,1 +1,1 @@
-This is my resume, but more interestingly, the Github action automatically converts your resume from .tex to .pdf! Feel free to use it to automatically generate pdfs in Github (Be sure to change main.tex YOUR_FILE_NAME_HERE.tex).
+This is my resume, but more interestingly, the Github action automatically converts your resume from .tex to .pdf! Feel free to use it to automatically generate pdfs in Github (Be sure to change main.tex to YOUR_FILE_NAME_HERE.tex).
